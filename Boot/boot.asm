@@ -8,6 +8,12 @@ boot:
     mov dx, 0x184F
     int 0x10
 
+    mov ah, 0x02
+    mov bh, 0x00
+    mov dh, 0x00
+    mov dl, 0x00
+    int 0x10
+
 load_os:
     mov ah, 0x02
     mov al, 3
