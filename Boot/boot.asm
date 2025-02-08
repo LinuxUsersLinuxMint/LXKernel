@@ -1,6 +1,9 @@
 [BITS 16]
 [org 0x7c00]
 
+Bootloadername db "LXBootloader", 0
+Bootloaderversion db "v0.1", 0
+
 boot:
     mov ax, 0x0600
     mov bh, 0x07
@@ -13,6 +16,12 @@ boot:
     mov dh, 0x00
     mov dl, 0x00
     int 0x10
+
+    mov si, Bootloadername
+    call print_string
+
+    mov si, Bootloaderversion
+    call print
 
 load_os:
     mov ah, 0x02
