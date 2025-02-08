@@ -2,6 +2,6 @@
 #define _KERN_VER_H_
 
 #define KernelName " LXKernel"
-#define KernelVersion " v1.0"
+#define KernelVersion " v1.0B"
 
 #endif

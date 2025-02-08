@@ -2,7 +2,11 @@
 [org 0x7c00]
 
 boot:
-    mov ah, 0x0E
+    mov ax, 0x0600
+    mov bh, 0x07
+    mov cx, 0x0000
+    mov dx, 0x184F
+    int 0x10
 
 load_os:
     mov ah, 0x02
