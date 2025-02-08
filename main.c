@@ -9,7 +9,8 @@ int main()
     print_string("Hello World!");
     timer(1);
     vga_set_color(VGA_COLOR_WHITE);
-    print_string(" Hello LXOS!");
+    space();
+    print_string("Hello LXOS!");
     print_string(KernelName);
     print_string(KernelVersion);
     timer(10);

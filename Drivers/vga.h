@@ -2,7 +2,7 @@
 #define _VGA_H_
 
 #define DriverName "LXKernel VGA driver"
-#define DriverVersion "v1.0"
+#define DriverVersion "v1.1"
 
 extern unsigned char VGA_COLOR_BLACK;
 extern unsigned char VGA_COLOR_BLUE;
@@ -16,7 +16,6 @@ extern unsigned char VGA_COLOR_GRAY;
 extern unsigned char VGA_COLOR_LIGHT_BLUE;
 extern unsigned char VGA_COLOR_LIGHT_GREEN;
 extern unsigned char VGA_COLOR_LIGHT_CYAN;
-extern unsigned char VGA_COLOR_LIGHT_GREEN;
 extern unsigned char VGA_COLOR_LIGHT_RED;
 extern unsigned char VGA_COLOR_LIGHT_MAGENTA;
 extern unsigned char VGA_COLOR_LIGHT_YELLOW;

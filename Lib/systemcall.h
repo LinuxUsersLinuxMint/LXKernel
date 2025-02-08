@@ -6,5 +6,6 @@ extern void exit_program();
 extern void error_msg(char *errmsg);
 extern void clear_screen();
 extern void timer(unsigned int time);
+extern void space();
 
 #endif
