@@ -11,7 +11,9 @@ int main()
     vga_set_color(VGA_COLOR_WHITE);
     space();
     print_string("Hello LXOS!");
+    space();
     print_string(KernelName);
+    space();
     print_string(KernelVersion);
     timer(10);
     exit_program();
