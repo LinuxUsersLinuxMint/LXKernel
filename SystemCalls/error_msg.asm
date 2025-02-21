@@ -13,6 +13,12 @@ error_msg:
     mov al, 'o'
     int 10h
     mov al, 'r'
-    call print_string
+    lodsb
+    or al, al
+    jz err_done
+    mov ah, 0x0E
+    int 0x10
+    jmp error_msg
 
-%include "print_string.asm"
+err_done:
+    ret
