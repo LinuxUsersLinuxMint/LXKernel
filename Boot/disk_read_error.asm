@@ -24,6 +24,7 @@ print_string:
     jmp print_string
 
 stop:
+    mov ah, 0x0E
     mov al, ' '
     int 10h
     ret
