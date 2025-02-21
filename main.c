@@ -1,6 +1,6 @@
-#include <Drivers/vga.h>
-#include <Lib/systemcall.h>
-#include <Lib/kern_ver.h>
+#include "Drivers/vga.h"
+#include "Lib/systemcall.h"
+#include "Lib/kern_ver.h"
 
 int main()
 {
